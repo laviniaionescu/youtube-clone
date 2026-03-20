@@ -367,6 +367,18 @@ li {
 .mobile-menu {
   display: none;
   flex-direction: column;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  z-index: 15;
+}
+
+.mobile-menu.active {
+  display: flex;
 }
 
 .mobile-footer {
@@ -377,13 +389,13 @@ li {
 
 .mobile-footer-p {
   margin-left: 30px;
-    color: grey;
+  color: grey;
   font-size: 0.65rem;
   font-weight: bold;
 }
 
 .mobile-menu-button {
-  margin-top: 60px;
+  margin-top: 50px;
   display: none;
 }
 

@@ -12,3 +12,16 @@ function menuSwitch() {
 
 const burgerBtn = document.getElementById("burger-menu-container");
 burgerBtn.addEventListener("click", menuSwitch);
+
+
+
+function openMobileMenu() {
+  const mobileMenu = document.querySelector(".mobile-menu")
+
+  if (window.innerWidth <= 768) {
+    mobileMenu.classList.add("active")
+  }
+}
+
+const mobileMenuBtn = document.querySelector(".mobile-menu-button")
+mobileMenuBtn.addEventListener("click", openMobileMenu);
