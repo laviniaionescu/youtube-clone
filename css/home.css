@@ -270,7 +270,7 @@ li {
 }
 
 .cr-p {
-  font-weight: lighter
+  font-weight: lighter;
 }
 
 .is-hidden {
@@ -362,9 +362,36 @@ li {
   margin-left: 260px;
 }
 
+/* ### MOBILE MENU ### */
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+}
+
+.mobile-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-footer-p {
+  margin-left: 30px;
+    color: grey;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
+.mobile-menu-button {
+  margin-top: 60px;
+  display: none;
+}
+
+
 /* ### MEDIA ### */
 
 @media(max-width:768px) {
+
   .mid-section {
     display: none;
   }
@@ -380,4 +407,13 @@ li {
   .main-content {
     margin-left: 10px;
   }
+
+  .burger-menu-container {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+  }
 }
+
