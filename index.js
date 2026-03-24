@@ -1,3 +1,4 @@
+// open and close the small vs big menu on desktop
 function menuSwitch() {
   const smallPanel = document.getElementById("small-side-panel");
   const bigPanel = document.getElementById("big-side-panel");
@@ -14,7 +15,7 @@ const burgerBtn = document.getElementById("burger-menu-container");
 burgerBtn.addEventListener("click", menuSwitch);
 
 
-
+// open the mobile menu
 function openMobileMenu() {
   const mobileMenu = document.querySelector(".mobile-menu")
   const menuOverlay = document.querySelector(".menu-overlay")
@@ -29,6 +30,7 @@ function openMobileMenu() {
 const mobileMenuBtn = document.querySelector(".mobile-menu-button")
 mobileMenuBtn.addEventListener("click", openMobileMenu);
 
+// close the mobile menu
 function closeMobileMenu() {
   const mobileMenu = document.querySelector(".mobile-menu")
   const menuOverlay = document.querySelector(".menu-overlay")

@@ -397,8 +397,13 @@ li {
 }
 
 .mobile-menu-button {
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-left: 20px;
   display: none;
+  width: 40px;
+  border-width: 0px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .mobile-menu-list {
@@ -423,8 +428,21 @@ li {
 
 .mobile-menu-close-btn {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-width: 0px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.yt-logo-mobile {
+  width: 110px;
+}
+
+.mobile-low-nav {
+  display: none;
 }
 
 
@@ -432,7 +450,13 @@ li {
 
 @media(max-width:768px) {
 
-  .mid-section {
+  .mid-section,
+  .small-side-panel,
+  .user-pfp-container,
+  .alert-btn,
+  .mic-btn,
+  .upload-btn,
+  .burger-menu-container {
     display: none;
   }
 
@@ -440,20 +464,17 @@ li {
     display: inline-block;
   }
 
-  .small-side-panel {
-    display: none;
-  }
-
   .main-content {
     margin-left: 10px;
   }
 
-  .burger-menu-container {
-    display: none;
-  }
-
   .mobile-menu-button {
     display: flex;
+    justify-content: center;
   }
+
+  .mobile-low-nav {
+  display: flex;
+}
 }
 

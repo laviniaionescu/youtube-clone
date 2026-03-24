@@ -26,49 +26,50 @@
 
         <nav class="top-nav">
 
-            <div class="left-section">
-                <div class="burger-menu-container" id="burger-menu-container">
-                    <span class="material-symbols-outlined burger-menu"
-                        >menu</span>
-                </div>
+          <div class="left-section">
+              <div class="burger-menu-container" id="burger-menu-container">
+                  <span class="material-symbols-outlined burger-menu"
+                    >menu</span>
+              </div>
 
-                <div class="logo-container">
-                    <a href="https://www.youtube.com">
-                        <img
-                            class="yt-logo"
-                            src="https://i.imgur.com/j6V5cPz.png"
-                            onerror="this.onerror = null; this.src = 'images/icons/yt-logo.png';"
-                            alt="logo"/>
-                    </a>
-                </div>
+              <div class="logo-container">
+                  <a href="https://www.youtube.com">
+                      <img
+                        class="yt-logo"
+                        src="https://i.imgur.com/j6V5cPz.png"
+                        onerror="this.onerror = null; this.src = 'images/icons/yt-logo.png';"
+                        alt="logo"/>
+                  </a>
+              </div>
+          </div>
+
+          <div class="mid-section">
+              <div class="search-container">
+                  <input type="text" class="searchbar" placeholder="Search"/>
+                  <button type="button" class="search-btn">
+                      <span class="material-symbols-outlined">search</span>
+                  </button>
+              </div>
+
+              <div class="mic-icon-container">
+                  <span class="material-symbols-outlined mic-icon">mic</span>
+              </div>
+          </div>
+
+          <div class="right-section">
+            <span class="material-symbols-outlined mobile-icons camera-btn">video_camera_back</span>
+            <span class="material-symbols-outlined mobile-icons">search</span>
+            <span class="material-symbols-outlined upload-btn">upload</span>
+            <span class="material-symbols-outlined mic-btn">mic</span>
+            <span class="material-symbols-outlined alert-btn">add_alert</span>
+
+            <div class="user-pfp-container">
+                <img
+                    class="user-pfp"
+                    src="images/user-pfp.jpeg"
+                    alt="user pfp"/>
             </div>
-
-            <div class="mid-section">
-                <div class="search-container">
-                    <input type="text" class="searchbar" placeholder="Search"/>
-                    <button type="button" class="search-btn">
-                        <span class="material-symbols-outlined">search</span>
-                    </button>
-                </div>
-
-                <div class="mic-icon-container">
-                    <span class="material-symbols-outlined mic-icon">mic</span>
-                </div>
-            </div>
-
-            <div class="right-section">
-                <span class="material-symbols-outlined mobile-icons">search</span>
-                <span class="material-symbols-outlined">upload</span>
-                <span class="material-symbols-outlined mobile-icons">mic</span>
-                <span class="material-symbols-outlined">add_alert</span>
-
-                <div class="user-pfp-container">
-                    <img
-                        class="user-pfp"
-                        src="images/user-pfp.jpeg"
-                        alt="user pfp"/>
-                </div>
-            </div>
+          </div>
         </nav>
 
         <button class="mobile-menu-button"><span class="material-symbols-outlined">explore</span></button>
@@ -342,6 +343,8 @@
                 <p class="cr-p">@ 2026 Google LLC</p>
             </footer>
         </nav>
+
+
 
         <main class="main-content">
 
@@ -651,17 +654,16 @@
 
           <div class="menu-overlay is-hidden"></div>
 
-
         
         
         <nav class="mobile-menu">
           
-          <button class="mobile-menu-close-btn">X</button>
+          <button class="mobile-menu-close-btn"><span class="material-symbols-outlined">close</span></button>
 
-          <div class="logo-container">
+          <div class="logo-container-mobile">
             <a href="https://www.youtube.com">
               <img
-                class="yt-logo"
+                class="yt-logo-mobile"
                 src="https://i.imgur.com/j6V5cPz.png"
                 onerror="this.onerror = null; this.src = 'images/icons/yt-logo.png';"
                 alt="logo"/>
@@ -738,6 +740,33 @@
 
         </nav>
 
+
+        <nav class="mobile-low-nav">
+
+          <ul class="mobile-low-nav-list"></ul>
+
+            <li>
+              <span class="material-symbols-outlined">home</span>
+              home
+            </li>
+
+            <li>
+              <span class="material-symbols-outlined">subscriptions</span>
+              subscriptions
+            </li>
+
+            <li>
+              <span class="material-symbols-outlined">notifications</span>
+              notifications
+            </li>
+
+            <li>
+              <span class="material-symbols-outlined">for_you</span>
+              you
+            </li>
+
+
+        </nav>
 
 
         </main>
