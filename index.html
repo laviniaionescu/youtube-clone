@@ -1,681 +1,794 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 
-  <link rel="stylesheet" href="css/home.css">
-  <title>Youtube</title>
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
 
-<body>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <nav class="top-nav">
+        <link rel="stylesheet" href="css/home.css"/>
 
-      <div class="left-section">
+        <title>Youtube</title>
 
-        <div class="burger-menu-container" id="burger-menu-container">
-          <span class="material-symbols-outlined burger-menu">menu</span>
+    </head>
+
+    <body>
+
+
+
+        <nav class="top-nav">
+
+          <div class="left-section">
+              <div class="burger-menu-container" id="burger-menu-container">
+                  <span class="material-symbols-outlined burger-menu"
+                    >menu</span>
+              </div>
+
+              <div class="logo-container">
+                  <a href="https://www.youtube.com">
+                      <img
+                        class="yt-logo"
+                        src="https://i.imgur.com/j6V5cPz.png"
+                        onerror="this.onerror = null; this.src = 'images/icons/yt-logo.png';"
+                        alt="logo"/>
+                  </a>
+              </div>
+          </div>
+
+          <div class="mid-section">
+              <div class="search-container">
+                  <input type="text" class="searchbar" placeholder="Search"/>
+                  <button type="button" class="search-btn">
+                      <span class="material-symbols-outlined">search</span>
+                  </button>
+              </div>
+
+              <div class="mic-icon-container">
+                  <span class="material-symbols-outlined mic-icon">mic</span>
+              </div>
+          </div>
+
+          <div class="right-section">
+            <span class="material-symbols-outlined mobile-icons camera-btn">video_camera_back</span>
+            <span class="material-symbols-outlined mobile-icons">search</span>
+            <span class="material-symbols-outlined upload-btn">upload</span>
+            <span class="material-symbols-outlined mic-btn">mic</span>
+            <span class="material-symbols-outlined alert-btn">add_alert</span>
+
+            <div class="user-pfp-container">
+                <img
+                    class="user-pfp"
+                    src="images/user-pfp.jpeg"
+                    alt="user pfp"/>
+            </div>
+          </div>
+        </nav>
+
+        <div class="tags-container">
+          <button class="mobile-menu-button"><span class="material-symbols-outlined">explore</span></button>
+
+          <div class="tags">
+            <button class="tag">All</button>
+            <button class="tag">Podcasts</button>
+            <button class="tag">Nature documentaries</button>
+            <button class="tag">Comedy</button>
+            <button class="tag">Recently uploaded</button>
+            <button class="tag">Watched</button>
+            <button class="tag">New to you</button>
+          </div>
         </div>
 
-        <div class="logo-container">
-          <a href="https://www.youtube.com">
-            <img 
-            class="yt-logo" 
-            src="https://i.imgur.com/j6V5cPz.png"
-            onerror="this.onerror=null; this.src='images/icons/yt-logo.png';"
-            alt="logo">
-          </a>
-        </div>
-
-       </div>
-
-
-
-      <div class="mid-section">
-
-        <div class="search-container">
-          <input type="text" class="searchbar" placeholder="Search">  
-          <button type="button" class="search-btn"><span class="material-symbols-outlined">search</span>
-          </button>
-        </div>
-
-        <div class="mic-icon-container">
-          <span class="material-symbols-outlined mic-icon">mic</span>
-        </div>
-
-      </div>
-
-
-
-      <div class="right-section">
-
-          <span class="material-symbols-outlined mobile-icons">search</span>
-          <span class="material-symbols-outlined">upload</span>
-          <span class="material-symbols-outlined mobile-icons">mic</span>
-          <span class="material-symbols-outlined">add_alert</span>
-
-        <div class="user-pfp-container">
-          <img class="user-pfp" src="images/user-pfp.jpeg" alt="user pfp">
-        </div>
-
-      </div>
-
-  </nav>
-
-  <nav class="small-side-panel" id="small-side-panel">
-
-    <ul class="small-side-panel-content">
-
-      <li class="home-container">
-        <span class="material-symbols-outlined home-btn">home</span>
-        <span>Home</span>
-      </li>
-
-      <li>
-        <span class="material-symbols-outlined">camera</span>
-        Shorts
-      </li>
-
-      <li>
-        <span class="material-symbols-outlined">subscriptions</span>
-        Subscriptions
-      </li>
-
-      <li>
-        <span class="material-symbols-outlined">for_you</span>
-        You
-      </li>
-    </ul>
-
-  </nav>
-
-  <nav class="big-side-panel is-hidden" id="big-side-panel">
-
-    <div class="home-shorts-container">
-      <div class="home-big-container">
-        <span class="material-symbols-outlined home-btn">home</span>
-        <div class="sub-label">
-          Home
-        </div>
-      </div>
-      <div class="shorts-container">
-        <span class="material-symbols-outlined">camera</span>
-        <div class="sub-label">
-          Shorts
-        </div>
-      </div>
-    </div>
-    
-    <div class="side-category-label">Subscriptions &gt</div>
-    <ul class="subscriptions-container-list">
-
-      <li class="side-list-item-container">
-        <div class="sub-pfp-container">
-          <img class="sub-pfp" 
-          src="https://i.imgur.com/OfYEVvN.jpeg" 
-          onerror="this.onerror=null; this.src='images/subscription-images/sub1.jpg';"
-          alt="sub pfp">
-        </div>
-        <div class="sub-label">
-          MrBeast
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <div class="sub-pfp-container">
-          <img class="sub-pfp" 
-          src="https://i.imgur.com/JsRZruP.jpeg" 
-          onerror="this.onerror=null; this.src='images/subscription-images/sub2.jpg';"
-          alt="sub pfp">
-        </div>
-        <div class="sub-label">
-          T-Series
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <div class="sub-pfp-container">
-          <img class="sub-pfp" 
-          src="https://i.imgur.com/NCIWTSN.png"
-          onerror="this.onerror=null; this.src='images/subscription-images/sub3.jpg';"
-          alt="sub pfp">
-        </div>
-        <div class="sub-label">
-          WWE
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <div class="sub-pfp-container">
-          <img class="sub-pfp" 
-          src="https://i.imgur.com/FUxqhWY.jpeg"
-          onerror="this.onerror=null; this.src='images/subscription-images/sub4.jpg';"
-          alt="sub pfp">
-        </div>
-        <div class="sub-label">
-          PewDiePie
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <div class="sub-pfp-container">
-          <img class="sub-pfp" 
-          src="https://i.imgur.com/jMyJP2N.jpeg"
-          onerror="this.onerror=null; this.src='images/subscription-images/sub5.jpg';"
-          alt="sub pfp">
-        </div>
-        <div class="sub-label">
-          Blackpink
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <div class="sub-pfp-container">
-          <img class="sub-pfp" 
-          src="https://i.imgur.com/iTogCXq.jpeg"
-          onerror="this.onerror=null; this.src='images/subscription-images/sub6.jpg';"
-          alt="sub pfp">
-        </div>
-        <div class="sub-label">
-          Justin Bieber
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <div class="sub-pfp-container">
-          <img class="sub-pfp" 
-          src="https://i.imgur.com/gkfDRLS.jpeg"
-          onerror="this.onerror=null; this.src='images/subscription-images/sub7.jpg';"
-          alt="sub pfp">
-        </div>
-        <div class="sub-label">
-          Eminem Music
-        </div>
-      </li>
-
-      <li class="side-list-item-container show-more-container">
-        <div class="sub-pfp-container">
-          <span class="material-symbols-outlined">keyboard_arrow_down</span>
-        </div>
-        <div class="sub-label">
-          Show more
-        </div>
-      </li>
-      
-    </ul>
-
-    <div class="side-category-label">You &gt</div>
-    <ul class="you-container-list">
-
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">history</span>
-        <div class="sub-label">
-          History
-        </div>
         
-      </li>
 
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">playlist_play</span>
-        <div class="sub-label">
-          Playlists
-        </div>
-      </li>
+        <nav class="small-side-panel" id="small-side-panel">
 
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">schedule</span>
-        <div class="sub-label">
-          Watch later
-        </div>
-      </li>
+            <ul class="small-side-panel-content">
 
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">thumb_up</span>
-        <div class="sub-label">
-          Liked videos
-        </div>
-      </li>
+                <li class="home-container">
+                    <span class="material-symbols-outlined home-btn">home</span>
+                    <span>Home</span>
+                </li>
 
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">video_library</span>
-        <div class="sub-label">
-          Your videos
-        </div>
-      </li>
+                <li>
+                    <span class="material-symbols-outlined">camera</span>
+                    Shorts
+                </li>
 
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined downloads-label">download</span>
-        <div class="sub-label">
-          Downloads
-        </div>
-      </li>
+                <li>
+                    <span class="material-symbols-outlined">subscriptions</span>
+                    Subscriptions
+                </li>
 
-    </ul>
+                <li>
+                    <span class="material-symbols-outlined">for_you</span>
+                    You
+                </li>
 
-    <div class="side-category-label">Explore</div>
-    <ul class="explore-container-list">
+            </ul>
 
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">music_note</span>
-        <div class="sub-label">
-          Music
-        </div>
-      </li>
+        </nav>
 
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">stream</span>
-        <div class="sub-label">
-          Live
-        </div>
-      </li>
+        <nav class="big-side-panel is-hidden" id="big-side-panel">
 
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">stadia_controller</span>
-        <div class="sub-label">
-          Gaming
-        </div>
-      </li>
-
-      <li class="side-list-item-container show-more-container">
-        <span class="material-symbols-outlined">keyboard_arrow_down</span>
-        <div class="sub-label">
-          Show more
-        </div>
-      </li>
-
-    </ul>
-
-    <div class="side-category-label">More from Youtube</div>
-    <ul class="explore-container-list">
-
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined red-icons">youtube_activity</span>
-        <div class="sub-label">
-          Youtube Premium
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined red-icons">movie_edit</span>
-        <div class="sub-label">
-          Youtube Studio
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined red-icons">music_video</span>
-        <div class="sub-label">
-          Youtube Music
-        </div>
-      </li>
-
-      <li class="side-list-item-container show-more-container">
-        <span class="material-symbols-outlined red-icons">toys</span>
-        <div class="sub-label">
-          Youtube Kids
-        </div>
-      </li>
-
-    </ul>
-
-    <ul class="explore-container-list">
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">settings</span>
-        <div class="sub-label">
-          Settings
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">flag_2</span>
-        <div class="sub-label">
-          Report history
-        </div>
-      </li>
-
-      <li class="side-list-item-container">
-        <span class="material-symbols-outlined">help</span>
-        <div class="sub-label">
-          Help 
-        </div>
-      </li>
-
-      <li class="side-list-item-container show-more-container">
-        <span class="material-symbols-outlined">feedback</span>
-        <div class="sub-label">
-          Send feedback
-        </div>
-      </li>
-    </ul>
-
-    <div class="footer-container">
-      <p class="footer-p">
-        About Press Copyright Contact us Creators Advertise Developers
-      </p>
-      <p class="footer-p">
-        Terms Privacy Policy & Safety How YouTube works Test new features
-      </p>
-      <p class="cr-p">
-        @ 2026 Google LLC
-      </p>
-    </div>
-
-  </nav>
-
-  <main class="main-content">
-    <section class="video-grid-container">
-      <div class="video-grid">
-
-        <article class="video-card">
-          
-          <div class="thumbnail-container">
-            <img 
-            class="thumbnail"
-            src="https://images.pexels.com/photos/1529360/pexels-photo-1529360.jpeg" 
-            onerror="this.onerror=null; this.src='images/video-thumbnail-images/pexels-chetanvlad-1529360.jpg';"
-            alt="video thumbnail">
-            <span class="video-timestamp">3:00:00</span>
-          </div>
-
-          <div class="uploader-pfp-title">
-
-            <div class="uploader-pfp-container">
-              <img 
-              class="uploader-pfp"
-              src="https://images.pexels.com/photos/235734/pexels-photo-235734.jpeg" 
-              onerror="this.onerror=null; this.src='images/icons/pexels-pixabay-235734.jpg';"
-              alt="uploader pfp">
+            <div class="home-shorts-container">
+                <div class="home-big-container">
+                    <span class="material-symbols-outlined home-btn">home</span>
+                    <div class="sub-label">Home</div>
+                </div>
+                <div class="shorts-container">
+                    <span class="material-symbols-outlined">camera</span>
+                    <div class="sub-label">Shorts</div>
+                </div>
             </div>
 
-            <div class="video-info">
-              <p class="video-title">Soothing rain for relaxation and sleep
-              </p>
-              <p class="channel-name">Nature sounds</p>
-              <div class="views-time">
-                <p class="views-count">1.2M views</p>
-                <p class="time-ago">5 years ago</p>
-              </div>
-            </div>
+            <div class="side-category-label">Subscriptions &gt</div>
 
-            <span class="material-symbols-outlined vertical-dots">more_vert</span>  
+            <ul class="subscriptions-container-list">
 
-          </div>
+                <li class="side-list-item-container">
 
-        </article>
+                    <div class="sub-pfp-container">
+                        <img
+                            class="sub-pfp"
+                            src="https://i.imgur.com/OfYEVvN.jpeg"
+                            onerror="this.onerror = null; this.src ='images/subscription-images/sub1.jpg';"
+                            alt="sub pfp"/>
+                    </div>
 
-        <article class="video-card">
-          
-          <div class="thumbnail-container">
-            <img 
-            class="thumbnail"
-            src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" 
-            onerror="this.onerror=null; this.src='images/video-thumbnail-images/pexels-enginakyurt-1437267.jpg';"
-            alt="video thumbnail">
-            <span class="video-timestamp">21:38</span>
-          </div>
+                    <div class="sub-label">MrBeast</div>
 
-          <div class="uploader-pfp-title">
+                </li>
 
-            <div class="uploader-pfp-container">
-              <img 
-              class="uploader-pfp"
-              src="https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg" 
-              onerror="this.onerror=null; this.src='images/icons/channel-icons/pexels-pixabay-248444.jpg';"
-              alt="uploader pfp">
-            </div>
+                <li class="side-list-item-container">
 
-            <div class="video-info">
-              <p class="video-title">Simple 20-Minute Pasta Recipe | Beginner Friendly
-              </p>
-              <p class="channel-name">Home Cooking Basics</p>
-              <div class="views-time">
-                <p class="views-count">1M views</p>
-                <p class="time-ago">2 years ago</p>
-              </div>
-            </div>
+                    <div class="sub-pfp-container">
+                        <img
+                            class="sub-pfp"
+                            src="https://i.imgur.com/JsRZruP.jpeg"
+                            onerror="this.onerror = null; this.src ='images/subscription-images/sub2.jpg';"
+                            alt="sub pfp"/>
+                    </div>
 
-            <span class="material-symbols-outlined vertical-dots">more_vert</span> 
+                    <div class="sub-label">T-Series</div>
 
-          </div>
+                </li>
 
-        </article>
+                <li class="side-list-item-container">
 
-        <article class="video-card">
-          
-          <div class="thumbnail-container">
-            <img 
-            class="thumbnail"
-            src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" 
-            onerror="this.onerror=null; this.src='images/video-thumbnail-images/pexels-antonio-batinic-2573434-4164418.jpg';"
-            alt="video thumbnail">
-            <span class="video-timestamp">1:05:32</span>
-          </div>
+                    <div class="sub-pfp-container">
+                        <img
+                            class="sub-pfp"
+                            src="https://i.imgur.com/NCIWTSN.png"
+                            onerror="this.onerror = null; this.src ='images/subscription-images/sub3.jpg';"
+                            alt="sub pfp"/>
+                    </div>
 
-          <div class="uploader-pfp-title">
+                    <div class="sub-label">WWE</div>
 
-            <div class="uploader-pfp-container">
-              <img 
-              class="uploader-pfp"
-              src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" 
-              onerror="this.onerror=null; this.src='images/icons/channel-icons/pexels-designecologist-1779487.jpg';"
-              alt="uploader pfp">
-            </div>
+                </li>
 
-            <div class="video-info">
-              <p class="video-title">Learn JavaScript in 1 Hour | Beginner Tutorial
-              </p>
-              <p class="channel-name">Dev Simplified</p>
-              <div class="views-time">
-                <p class="views-count">2.3M views</p>
-                <p class="time-ago">1 year ago</p>
-              </div>
-            </div>
+                <li class="side-list-item-container">
 
-            <span class="material-symbols-outlined vertical-dots">more_vert</span> 
+                    <div class="sub-pfp-container">
+                        <img
+                            class="sub-pfp"
+                            src="https://i.imgur.com/FUxqhWY.jpeg"
+                            onerror="this.onerror = null; this.src = 'images/subscription-images/sub4.jpg';"
+                            alt="sub pfp"/>
+                    </div>
 
-          </div>
+                    <div class="sub-label">PewDiePie</div>
 
-        </article>
+                </li>
 
-        <article class="video-card">
-          
-          <div class="thumbnail-container">
-            <img 
-            class="thumbnail"
-            src="https://images.pexels.com/photos/3984340/pexels-photo-3984340.jpeg" 
-            onerror="this.onerror=null; this.src='images/video-thumbnail-images/pexels-gustavo-fring-3984340.jpg';"
-            alt="video thumbnail">
-            <span class="video-timestamp">10:14</span>
-          </div>
+                <li class="side-list-item-container">
+                    <div class="sub-pfp-container">
+                        <img
+                            class="sub-pfp"
+                            src="https://i.imgur.com/jMyJP2N.jpeg"
+                            onerror="this.onerror = null; this.src = 'images/subscription-images/sub5.jpg';"
+                            alt="sub pfp"/>
+                    </div>
 
-          <div class="uploader-pfp-title">
+                    <div class="sub-label">Blackpink</div>
 
-            <div class="uploader-pfp-container">
-              <img 
-              class="uploader-pfp"
-              src="https://images.pexels.com/photos/37351/silhouette-aerialist-female-woman.jpg" 
-              onerror="this.onerror=null; this.src='images/icons/channel-icons/pexels-pixabay-37351.jpg';"
-              alt="uploader pfp">
-            </div>
+                </li>
 
-            <div class="video-info">
-              <p class="video-title">10 Minute Morning Stretch
-              </p>
-              <p class="channel-name">Wellness with Sarah</p>
-              <div class="views-time">
-                <p class="views-count">540K views</p>
-                <p class="time-ago">8 months ago</p>
-              </div>
-            </div>
+                <li class="side-list-item-container">
+                    <div class="sub-pfp-container">
+                        <img
+                            class="sub-pfp"
+                            src="https://i.imgur.com/iTogCXq.jpeg"
+                            onerror="this.onerror = null; this.src = 'images/subscription-images/sub6.jpg';"
+                            alt="sub pfp"/>
+                    </div>
 
-            <span class="material-symbols-outlined vertical-dots">more_vert</span> 
+                    <div class="sub-label">Justin Bieber</div>
 
-          </div>
+                </li>
 
-        </article>
+                <li class="side-list-item-container">
 
-        <article class="video-card">
-          
-          <div class="thumbnail-container">
-            <img 
-            class="thumbnail"
-            src="https://images.pexels.com/photos/257519/pexels-photo-257519.jpeg" 
-            onerror="this.onerror=null; this.src='images/video-thumbnail-images/pexels-pixabay-257519.jpg';"
-            alt="video thumbnail">
-            <span class="video-timestamp">5:45</span>
-          </div>
+                    <div class="sub-pfp-container">
+                        <img
+                            class="sub-pfp"
+                            src="https://i.imgur.com/gkfDRLS.jpeg"
+                            onerror="this.onerror = null; this.src = 'images/subscription-images/sub7.jpg';"
+                            alt="sub pfp"/>
+                    </div>
 
-          <div class="uploader-pfp-title">
+                    <div class="sub-label">Eminem Music</div>
 
-            <div class="uploader-pfp-container">
-              <img 
-              class="uploader-pfp"
-              src="https://images.pexels.com/photos/372166/pexels-photo-372166.jpeg" 
-              onerror="this.onerror=null; this.src='images/icons/channel-icons/pexels-pixabay-372166.jpg';"
-              alt="uploader pfp">
-            </div>
+                </li>
 
-            <div class="video-info">
-              <p class="video-title">Funny Dogs Being Silly 🐶
-              </p>
-              <p class="channel-name">Paws & Clips</p>
-              <div class="views-time">
-                <p class="views-count">3M views</p>
-                <p class="time-ago">4 years ago</p>
-              </div>
-            </div>
+                <li class="side-list-item-container show-more-container">
 
-            <span class="material-symbols-outlined vertical-dots">more_vert</span> 
+                    <div class="sub-pfp-container">
+                        <span class="material-symbols-outlined"
+                            >keyboard_arrow_down</span>
+                    </div>
 
-          </div>
+                    <div class="sub-label">Show more</div>
 
-        </article>
+                </li>
 
-        <article class="video-card">
-          
-          <div class="thumbnail-container">
-            <img 
-            class="thumbnail"
-            src="https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg" 
-            onerror="this.onerror=null; this.src='images/video-thumbnail-images/pexels-pixabay-355465.jpg';"
-            alt="video thumbnail">
-            <span class="video-timestamp">2:00:00</span>
-          </div>
+            </ul>
 
-          <div class="uploader-pfp-title">
+            <div class="side-category-label">You &gt</div>
+            <ul class="you-container-list">
 
-            <div class="uploader-pfp-container">
-              <img 
-              class="uploader-pfp"
-              src="https://images.pexels.com/photos/2034892/pexels-photo-2034892.jpeg" 
-              onerror="this.onerror=null; this.src='images/icons/channel-icons/pexels-lucaspezeta-2034892.jpg';"
-              alt="uploader pfp">
-            </div>
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">history</span>
+                    <div class="sub-label">History</div>
+                </li>
 
-            <div class="video-info">
-              <p class="video-title">2 Hours of Relaxing Space Ambient Music
-              </p>
-              <p class="channel-name">Cosmic Relaxation</p>
-              <div class="views-time">
-                <p class="views-count">800K views</p>
-                <p class="time-ago">3 years ago</p>
-              </div>
-            </div>
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">playlist_play</span>
+                    <div class="sub-label">Playlists</div>
+                </li>
 
-            <span class="material-symbols-outlined vertical-dots">more_vert</span> 
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <div class="sub-label">Watch later</div>
+                </li>
 
-          </div>
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">thumb_up</span>
+                    <div class="sub-label">Liked videos</div>
+                </li>
 
-        </article>
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">video_library</span>
+                    <div class="sub-label">Your videos</div>
+                </li>
 
-        <article class="video-card">
-          
-          <div class="thumbnail-container">
-            <img 
-            class="thumbnail"
-            src="https://images.pexels.com/photos/3654772/pexels-photo-3654772.jpeg" 
-            onerror="this.onerror=null; this.src='images/video-thumbnail-images/pexels-enginakyurt-1437267.jpg';"
-            alt="video thumbnail">
-            <span class="video-timestamp">15:14</span>
-          </div>
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined downloads-label">download</span>
+                    <div class="sub-label">Downloads</div>
+                </li>
 
-          <div class="uploader-pfp-title">
+            </ul>
 
-            <div class="uploader-pfp-container">
-              <img 
-              class="uploader-pfp"
-              src="https://images.pexels.com/photos/1266139/pexels-photo-1266139.jpeg" 
-              onerror="this.onerror=null; this.src='images/icons/channel-icons/pexels-suzyhazelwood-1266139.jpg';"
-              alt="uploader pfp">
-            </div>
+            <div class="side-category-label">Explore</div>
+            <ul class="explore-container-list">
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">music_note</span>
+                    <div class="sub-label">Music</div>
+                </li>
 
-            <div class="video-info">
-              <p class="video-title">Easy DIY Home Decor Projects Anyone Can Do
-              </p>
-              <p class="channel-name">Crafty Corner</p>
-              <div class="views-time">
-                <p class="views-count">1.1M views</p>
-                <p class="time-ago">11 months ago</p>
-              </div>
-            </div>
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">stream</span>
+                    <div class="sub-label">Live</div>
+                </li>
 
-            <span class="material-symbols-outlined vertical-dots">more_vert</span> 
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">stadia_controller</span>
+                    <div class="sub-label">Gaming</div>
+                </li>
 
-          </div>
+                <li class="side-list-item-container show-more-container">
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    <div class="sub-label">Show more</div>
+                </li>
+            </ul>
 
-        </article>
+            <div class="side-category-label">More from Youtube</div>
+            <ul class="explore-container-list">
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined red-icons">youtube_activity</span>
+                    <div class="sub-label">Youtube Premium</div>
+                </li>
 
-        <article class="video-card">
-          
-          <div class="thumbnail-container">
-            <img 
-            class="thumbnail"
-            src="https://images.pexels.com/photos/16660223/pexels-photo-16660223.jpeg" 
-            onerror="this.onerror=null; this.src='images/video-thumbnail-images/pexels-shimada-masaki-67885393-16660223.jpg';"
-            alt="video thumbnail">
-            <span class="video-timestamp">13:41</span>
-          </div>
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined red-icons">movie_edit</span>
+                    <div class="sub-label">Youtube Studio</div>
+                </li>
 
-          <div class="uploader-pfp-title">
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined red-icons">music_video</span>
+                    <div class="sub-label">Youtube Music</div>
+                </li>
 
-            <div class="uploader-pfp-container">
-              <img 
-              class="uploader-pfp"
-              src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg" 
-              onerror="this.onerror=null; this.src='images/icons/channel-icons/pexels-thorsten-technoman-109353-338515.jpg';"
-              alt="uploader pfp">
-            </div>
+                <li class="side-list-item-container show-more-container">
+                    <span class="material-symbols-outlined red-icons">toys</span>
+                    <div class="sub-label">Youtube Kids</div>
+                </li>
+            </ul>
 
-            <div class="video-info">
-              <p class="video-title">Hidden Gems in Japan
-              </p>
-              <p class="channel-name">Off The Path</p>
-              <div class="views-time">
-                <p class="views-count">1.3M views</p>
-                <p class="time-ago">7 years ago</p>
-              </div>
-            </div>
+            <ul class="explore-container-list">
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">settings</span>
+                    <div class="sub-label">Settings</div>
+                </li>
 
-            <span class="material-symbols-outlined vertical-dots">more_vert</span> 
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">flag_2</span>
+                    <div class="sub-label">Report history</div>
+                </li>
 
-          </div>
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">help</span>
+                    <div class="sub-label">Help</div>
+                </li>
 
-        </article>
+                <li class="side-list-item-container show-more-container">
+                    <span class="material-symbols-outlined">feedback</span>
+                    <div class="sub-label">Send feedback</div>
+                </li>
+            </ul>
+
+            <footer class="footer-container">
+                <p class="footer-p">
+                    About Press Copyright Contact us Creators Advertise
+                    Developers
+                </p>
+                <p class="footer-p">
+                    Terms Privacy Policy & Safety How YouTube works Test new
+                    features
+                </p>
+                <p class="cr-p">@ 2026 Google LLC</p>
+            </footer>
+        </nav>
+
+
+
+        <main class="main-content">
+
+          <section class="video-grid-container">
+
+                <div class="video-grid">
+
+                    <article class="video-card">
+
+                        <div class="thumbnail-container">
+                            <img
+                                class="thumbnail"
+                                src="https://i.imgur.com/eF0upht.jpeg"
+                                onerror="this.onerror = null; this.src ='images/video-thumbnail-images/pexels-chetanvlad-1529360.jpg';"
+                                alt="video thumbnail"/>
+                            <span class="video-timestamp">3:00:00</span>
+                        </div>
+
+                        <div class="uploader-pfp-title">
+                            <div class="uploader-pfp-container">
+                                <img
+                                    class="uploader-pfp"
+                                    src="https://i.imgur.com/G7p6MuM.jpeg"
+                                    onerror="this.onerror = null; this.src = 'images/icons/pexels-pixabay-235734.jpg';"
+                                    alt="uploader pfp"/>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Soothing rain for relaxation and sleep
+                                </p>
+                                <p class="channel-name">Nature sounds</p>
+                                <div class="views-time">
+                                    <p class="views-count">1.2M views</p>
+                                    <p class="time-ago">5 years ago</p>
+                                </div>
+                            </div>
+
+                            <span class="material-symbols-outlined vertical-dots">more_vert</span>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+
+                        <div class="thumbnail-container">
+                            <img
+                                class="thumbnail"
+                                src="https://i.imgur.com/tKYErmU.jpeg"
+                                onerror="this.onerror = null; this.src = 'images/video-thumbnail-images/pexels-enginakyurt-1437267.jpg';"
+                                alt="video thumbnail"/>
+                            <span class="video-timestamp">21:38</span>
+                        </div>
+
+                        <div class="uploader-pfp-title">
+                            <div class="uploader-pfp-container">
+                                <img
+                                    class="uploader-pfp"
+                                    src="https://i.imgur.com/u1EDC4X.jpeg"
+                                    onerror="this.onerror = null; this.src = 'images/icons/channel-icons/pexels-pixabay-248444.jpg';"
+                                    alt="uploader pfp"/>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Simple 20-Minute Pasta Recipe | Beginner
+                                    Friendly
+                                </p>
+                                <p class="channel-name">Home Cooking Basics</p>
+                                <div class="views-time">
+                                    <p class="views-count">1M views</p>
+                                    <p class="time-ago">2 years ago</p>
+                                </div>
+                            </div>
+
+                            <span class="material-symbols-outlined vertical-dots">more_vert</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="video-card">
+
+                        <div class="thumbnail-container">
+
+                            <img
+                                class="thumbnail"
+                                src="https://i.imgur.com/j6HkYrr.jpeg"
+                                onerror="this.onerror = null;this.src = 'images/video-thumbnail-images/pexels-antonio-batinic-2573434-4164418.';"
+                                alt="video thumbnail"/>
+                            <span class="video-timestamp">1:05:32</span>
+
+                        </div>
+
+                        <div class="uploader-pfp-title">
+                            <div class="uploader-pfp-container">
+                                <img
+                                    class="uploader-pfp"
+                                    src="https://i.imgur.com/pVLZFGO.jpeg"
+                                    onerror="this.onerror = null;this.src = 'images/icons/channel-icons/pexels-designecologist-1779487.jpg';"
+                                    alt="uploader pfp"/>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Learn JavaScript in 1 Hour | Beginner
+                                    Tutorial
+                                </p>
+                                <p class="channel-name">Dev Simplified</p>
+                                <div class="views-time">
+                                    <p class="views-count">2.3M views</p>
+                                    <p class="time-ago">1 year ago</p>
+                                </div>
+                            </div>
+
+                            <span class="material-symbols-outlined vertical-dots">more_vert</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="video-card">
+
+                        <div class="thumbnail-container">
+                            <img
+                                class="thumbnail"
+                                src="https://i.imgur.com/7zGduij.jpeg"
+                                onerror="this.onerror = null; this.src = 'images/video-thumbnail-images/pexels-gustavo-fring-3984340.jpg';"
+                                alt="video thumbnail"/>
+                            <span class="video-timestamp">10:14</span>
+                        </div>
+
+                        <div class="uploader-pfp-title">
+                            <div class="uploader-pfp-container">
+                                <img
+                                    class="uploader-pfp"
+                                    src="https://i.imgur.com/ktLFMMc.jpeg"
+                                    onerror="this.onerror = null; this.src = 'images/icons/channel-icons/pexels-pixabay-37351.jpg';"
+                                    alt="uploader pfp"/>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-title">
+                                    10 Minute Morning Stretch
+                                </p>
+                                <p class="channel-name">Wellness with Sarah</p>
+                                <div class="views-time">
+                                    <p class="views-count">540K views</p>
+                                    <p class="time-ago">8 months ago</p>
+                                </div>
+                            </div>
+
+                            <span class="material-symbols-outlined vertical-dots">more_vert</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="video-card">
+
+                        <div class="thumbnail-container">
+                            <img
+                                class="thumbnail"
+                                src="https://i.imgur.com/jNzXS08.jpeg"
+                                onerror="this.onerror = null; this.src ='images/video-thumbnail-images/pexels-pixabay-257519.jpg';"
+                                alt="video thumbnail"/>
+                            <span class="video-timestamp">5:45</span>
+                        </div>
+
+                        <div class="uploader-pfp-title">
+
+                            <div class="uploader-pfp-container">
+                                <img
+                                    class="uploader-pfp"
+                                    src="https://i.imgur.com/eIyTbko.jpeg"
+                                    onerror="this.onerror = null; this.src ='images/icons/channel-icons/pexels-pixabay-372166.jpg';"
+                                    alt="uploader pfp"/>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Funny Dogs Being Silly 🐶
+                                </p>
+                                <p class="channel-name">Paws & Clips</p>
+
+                                <div class="views-time">
+                                    <p class="views-count">3M views</p>
+                                    <p class="time-ago">4 years ago</p>
+                                </div>
+                            </div>
+
+                            <span class="material-symbols-outlined vertical-dots">more_vert</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail-container">
+                            <img
+                                class="thumbnail"
+                                src="https://i.imgur.com/jF3LLVt.jpeg"
+                                onerror="this.onerror = null; this.src = 'images/video-thumbnail-images/pexels-pixabay-355465.jpg';"
+                                alt="video thumbnail"/>
+                            <span class="video-timestamp">2:00:00</span>
+                        </div>
+
+                        <div class="uploader-pfp-title">
+                            <div class="uploader-pfp-container">
+                                <img
+                                    class="uploader-pfp"
+                                    src="https://i.imgur.com/egvchU2.jpeg"
+                                    onerror="this.onerror = null; this.src = 'images/icons/channel-icons/pexels-lucaspezeta-2034892.jpg';"
+                                    alt="uploader pfp"/>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-title">
+                                    2 Hours of Relaxing Space Ambient Music
+                                </p>
+                                <p class="channel-name">Cosmic Relaxation</p>
+                                <div class="views-time">
+                                    <p class="views-count">800K views</p>
+                                    <p class="time-ago">3 years ago</p>
+                                </div>
+                            </div>
+
+                            <span class="material-symbols-outlined vertical-dots">more_vert</span>
+
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail-container">
+                            <img
+                                class="thumbnail"
+                                src="https://i.imgur.com/xUeN6qC.jpeg"
+                                onerror="this.onerror = null; this.src = 'images/video-thumbnail-images/pexels-enginakyurt-1437267.jpg';"
+                                alt="video thumbnail"/>
+                            <span class="video-timestamp">15:14</span>
+                        </div>
+
+                        <div class="uploader-pfp-title">
+
+                            <div class="uploader-pfp-container">
+                                <img
+                                    class="uploader-pfp"
+                                    src="https://i.imgur.com/SfyXfyX.jpeg"
+                                    onerror="this.onerror = null; this.src = 'images/icons/channel-icons/pexels-suzyhazelwood-1266139.jpg';"
+                                    alt="uploader pfp"/>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-title">
+                                    Easy DIY Home Decor Projects Anyone Can Do
+                                </p>
+                                <p class="channel-name">Crafty Corner</p>
+                                <div class="views-time">
+                                    <p class="views-count">1.1M views</p>
+                                    <p class="time-ago">11 months ago</p>
+                                </div>
+                            </div>
+
+                            <span class="material-symbols-outlined vertical-dots">more_vert</span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="video-card">
+
+                        <div class="thumbnail-container">
+                            <img
+                                class="thumbnail"
+                                src="https://i.imgur.com/XmoelhV.jpeg"
+                                onerror="this.onerror = null; this.src = 'images/video-thumbnail-images/pexels-shimada-masaki-67885393-16660223';"
+                                alt="video thumbnail"/>
+                            <span class="video-timestamp">13:41</span>
+                        </div>
+
+                        <div class="uploader-pfp-title">
+                            <div class="uploader-pfp-container">
+                                <img
+                                    class="uploader-pfp"
+                                    src="https://i.imgur.com/uO6pgbA.jpeg"
+                                    onerror="this.onerror = null; this.src = 'images/icons/channel-icons/pexels-thorsten-technoman-109353-338515.jpg';"
+                                    alt="uploader pfp"/>
+                            </div>
+
+                            <div class="video-info">
+                                <p class="video-title">Hidden Gems in Japan</p>
+                                <p class="channel-name">Off The Path</p>
+                                <div class="views-time">
+                                    <p class="views-count">1.3M views</p>
+                                    <p class="time-ago">7 years ago</p>
+                                </div>
+                            </div>
+
+                            <span class="material-symbols-outlined vertical-dots">more_vert</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+          </section>
+
+          <div class="menu-overlay is-hidden"></div>
+
         
-      </div>
-    </section>
-  </main>
+        
+        <nav class="mobile-menu">
+          
+          <button class="mobile-menu-close-btn"><span class="material-symbols-outlined">close</span></button>
 
-  <script src="index.js"></script>
-</body>
+          <div class="logo-container-mobile">
+            <a href="https://www.youtube.com">
+              <img
+                class="yt-logo-mobile"
+                src="https://i.imgur.com/j6V5cPz.png"
+                onerror="this.onerror = null; this.src = 'images/icons/yt-logo.png';"
+                alt="logo"/>
+            </a>
+          </div>
 
+
+
+          <ul class="mobile-menu-list">
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">music_note</span>
+                    <div class="mobile-menu-item">Music</div>
+                </li>
+
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">cheer</span>
+                    <div class="mobile-menu-item">Hype</div>
+                </li>
+
+                <li class="side-list-item-container">
+                    <span class="material-symbols-outlined">stadia_controller</span>
+                    <div class="mobile-menu-item">Gaming</div>
+                </li>
+
+                <li class="side-list-item-container show-more-container">
+                    <span class="material-symbols-outlined">trophy</span>
+                    <div class="mobile-menu-item">Sports</div>
+                </li>
+
+                <li class="side-list-item-container show-more-container">
+                    <span class="material-symbols-outlined">podcasts</span>
+                    <div class="mobile-menu-item">Podcasts</div>
+                </li>
+          </ul>
+
+
+
+          <ul class="mobile-menu-list">
+            <li class="side-list-item-container">
+                <span class="material-symbols-outlined red-icons">youtube_activity</span>
+                <div class="mobile-menu-item">Youtube Premium</div>
+            </li>
+
+            <li class="side-list-item-container">
+                <span class="material-symbols-outlined red-icons">movie_edit</span>
+                <div class="mobile-menu-item">Youtube Studio</div>
+            </li>
+
+            <li class="side-list-item-container">
+                <span class="material-symbols-outlined red-icons">music_video</span>
+                <div class="mobile-menu-item">Youtube Music</div>
+            </li>
+
+            <li class="side-list-item-container show-more-container">
+                <span class="material-symbols-outlined red-icons">toys</span>
+                <div class="mobile-menu-item">Youtube Kids</div>
+            </li>
+          </ul>
+
+
+
+          <footer class="mobile-footer">
+                
+            <li class="side-list-item-container">
+                <span class="material-symbols-outlined">info</span>
+                <div class="mobile-menu-item">How YouTube works</div>
+            </li>
+
+            <p class="mobile-footer-p">
+                  Privacy policy Terms of Service
+            </p>
+
+          </footer>
+
+        </nav>
+
+
+        <nav class="mobile-low-nav">
+
+          <ul class="mobile-low-nav-list">
+
+            <li class="mobile-nav-elem">
+              <span class="material-symbols-outlined">home</span>
+              <div class="mobile-nav-elem-text">Home</div>
+            </li>
+
+            <li class="mobile-nav-elem">
+              <span class="material-symbols-outlined">subscriptions</span>
+              <div class="mobile-nav-elem-text">Subscriptions</div>
+            </li>
+
+            <li class="mobile-nav-elem">
+              <span class="material-symbols-outlined">notifications</span>
+              <div class="mobile-nav-elem-text">Notifications</div>
+            </li>
+
+            <li class="mobile-nav-elem">
+              <span class="material-symbols-outlined">for_you</span>
+              <div class="mobile-nav-elem-text">You</div>
+            </li>
+
+          </ul>
+
+            
+
+
+        </nav>
+
+
+        </main>
+
+        <script src="index.js"></script>
+    </body>
 </html>
